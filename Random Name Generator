@@ -1,0 +1,12 @@
+import random
+import string
+
+Nameof_Ec2 = int(input('How many Unique Ec2 names: '))
+Nameof_Department = input('Whats the name of your Department:')
+print('List of Unique Ec2 names :')
+for a in range(Nameof_Ec2):
+    random_character = ''.join(random.choices(string.ascii_letters, k=2))
+    Random_Number = ''.join(random.choices(string.digits,k=2))
+    Unique_names = Nameof_Department + '-' + random_character + str(Random_Number)
+    print(Unique_names)
+
